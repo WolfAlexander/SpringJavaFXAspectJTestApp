@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PostMessageController">
+   <children>
+      <Label text="Username:" />
+      <TextField fx:id="usernameInput" maxWidth="200.0" />
+      <Label text="Message;" />
+      <TextField fx:id="messageInput" maxWidth="200.0" />
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#postMessage" text="Post Message" />
+      <Label fx:id="postResult" />
+   </children>
+</VBox>
