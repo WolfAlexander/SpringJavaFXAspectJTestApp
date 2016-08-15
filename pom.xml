@@ -93,7 +93,7 @@
                         </manifestEntries>
                     </archive>
 
-                    <finalName>SpringJavaFXAspectJTestApp/SpringJavaFXAspectJTestApp</finalName>
+                    <fileName>SpringJavaFXAspectJTestApp/SpringJavaFXAspectJTestApp</fileName>
                 </configuration>
             </plugin>
         </plugins>

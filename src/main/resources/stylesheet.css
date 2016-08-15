@@ -1,0 +1,27 @@
+.root{
+    -fx-background-color: radial-gradient(center 50% 5%, radius 100%, orange, white 50%, orange);
+}
+
+.label{
+    -fx-font-size: 15px;
+}
+
+.button{
+    -fx-min-width: 200px;
+    -fx-min-height: 30px;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to bottom, black, lightgray);
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-font-size: 12px;
+    -fx-border-radius: 30;
+    -fx-font-family: Arial;
+}
+
+.button:hover{
+    -fx-background-color: linear-gradient(to bottom, lightgray, black);
+}
+
+.button:pressed{
+    -fx-background-insets: 2, 0, 1;
+}

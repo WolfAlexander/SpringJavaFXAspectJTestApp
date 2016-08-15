@@ -16,6 +16,6 @@ public class Startup extends Application{
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class, ViewConfig.class, AspectConfig.class);
         ViewConfig viewConfig = context.getBean(ViewConfig.class);
         viewConfig.setPrimaryStage(primaryStage);
-        viewConfig.homeView().getController().showView();
+        viewConfig.homeStageController().showView();
     }
 }

@@ -1,6 +1,5 @@
 package configuration;
 
-import aspect.TestClickAspect;
 import integration.MessageJDBCTemplate;
 import model.TestClickModel;
 import org.springframework.context.annotation.*;

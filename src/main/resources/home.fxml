@@ -14,7 +14,7 @@
       </Label>
       <Button fx:id="testBttn" mnemonicParsing="false" onAction="#doesItWork" text="Does it Work?" />
       <Label fx:id="answerField" />
-      <Button mnemonicParsing="false" onAction="#showTestStage" text="Switch Stage" />
-      <Button mnemonicParsing="false" onAction="#showPostMessageView" text="Post Message" />
+      <Button mnemonicParsing="false" onAction="#switchToTestView" text="Test Switch Scene" />
+      <Button mnemonicParsing="false" onAction="#switchToPostMessageView" text="Post Message" />
    </children>
 </VBox>

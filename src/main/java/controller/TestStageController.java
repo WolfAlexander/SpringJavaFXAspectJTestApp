@@ -3,28 +3,22 @@ package controller;
 import configuration.ViewConfig;
 import model.TestClickModel;
 import org.springframework.beans.factory.annotation.Autowired;
-import view.View;
+import view.ViewLoader;
 
 public class TestStageController implements CustomController {
     @Autowired
     private TestClickModel model;
-    private View view;
+    private ViewLoader viewLoader;
     private ViewConfig viewConfig;
 
     @Override
-    public void setView(View view) {
-        this.view = view;
+    public void setViewLoader(ViewLoader viewLoader) {
+        this.viewLoader = viewLoader;
     }
 
     @Override
     public void showView() {
-        view.setTitle("Not Home Stage");
-        view.show();
-    }
-
-    @Override
-    public void closeView() {
-        view.close();
+        viewLoader.showView(ViewLoader.Views.TEST, this);
     }
 
     @Override
@@ -32,8 +26,7 @@ public class TestStageController implements CustomController {
         this.viewConfig = viewConfig;
     }
 
-    public void goHome(){
-        viewConfig.homeView().getController().showView();
-        closeView();
+    public void switchToHomeView(){
+        viewConfig.homeStageController().showView();
     }
 }
